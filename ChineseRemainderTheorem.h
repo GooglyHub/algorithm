@@ -6,6 +6,9 @@
 using namespace std;
 
 template <class T>
+T chineseRemainderTheorem(const vector <T> &a, const vector <T> &m);
+
+template <class T>
 vector <T> chineseRemainderTheoremHelper(const vector <T> &m);
 
 template <class T>
