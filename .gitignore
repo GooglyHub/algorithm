@@ -15,4 +15,5 @@
 # Code Blocks
 *.cbp
 *.depend
+*.exe
 
