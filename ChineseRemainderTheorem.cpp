@@ -51,7 +51,6 @@ T euclid(T m1, T m2)
 int test()
 {
     // Solve x==2 (mod 3), x==3 (mod 4), x==1 (mod 5)
-
     vector <int> a;
     a.push_back(2);
     a.push_back(3);
