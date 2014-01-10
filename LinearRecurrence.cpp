@@ -65,4 +65,6 @@ int testLinearRecurrence()
 
     for (int i=0; i<=10; i++)
         cout << i << " " << solveLinearRecurrence(base, recur, i, 0) << endl;
+
+    return 1;
 }
