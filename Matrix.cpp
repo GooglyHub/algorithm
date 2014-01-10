@@ -64,8 +64,11 @@ Matrix<T>& Matrix<T>::operator*=(const Matrix<T>& t)
                 {
                     long long x = a[r][i];
                     x *= t.a[i][c];
-                    x %= MOD;
-                    prod->a[r][c] += x;
+                    if (x >= 0)
+                        x %= MOD;
+                    else
+                        x = (x % MOD) + MOD;
+                    prod->a[r][c] += (T)x;
                     if (prod->a[r][c] >= MOD)
                         prod->a[r][c] -= MOD;
                 }
@@ -104,7 +107,7 @@ Matrix<T>& Matrix<T>::pow(long long p)
     return *res;
 }
 
-int test()
+int test_matrix()
 {
     Matrix <int> m(2);
     m[0][0] = m[0][1] = m[1][0] = 1;
