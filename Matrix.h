@@ -1,7 +1,9 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
-#include <iostream>
+#include <ostream>
+
+using namespace std;
 
 template <class T>
 class Matrix
@@ -19,5 +21,8 @@ class Matrix
         int MOD;
         T **a;
 };
+
+template <class T>
+ostream& operator<<(ostream& out, Matrix<T>& m);
 
 #endif // MATRIX_H
