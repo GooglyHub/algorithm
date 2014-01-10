@@ -48,7 +48,7 @@ T euclid(T m1, T m2)
     return tt * m2;
 }
 
-int test()
+int test_crt()
 {
     // Solve x==2 (mod 3), x==3 (mod 4), x==1 (mod 5)
     vector <int> a;
