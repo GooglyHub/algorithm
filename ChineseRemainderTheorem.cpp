@@ -10,7 +10,7 @@ T chineseRemainderTheorem(const vector <T> &a, const vector <T> &m)
 {
     vector <T> u = chineseRemainderTheoremHelper(m);
     T ans = 0, M = 1;
-    for (int i = 0; i < u.size(); i++)
+    for (unsigned int i = 0; i < u.size(); i++)
     {
         ans += a[i] * u[i];
         M *= m[i];
@@ -25,9 +25,9 @@ vector <T> chineseRemainderTheoremHelper(const vector <T> &m)
 {
     vector <T> ret;
     T prod = 1;
-    for (int i = 0; i < m.size(); i++)
+    for (unsigned int i = 0; i < m.size(); i++)
         prod *= m[i];
-    for (int i = 0; i < m.size(); i++)
+    for (unsigned int i = 0; i < m.size(); i++)
         ret.push_back(euclid(m[i], prod/m[i]));
     return ret;
 }
